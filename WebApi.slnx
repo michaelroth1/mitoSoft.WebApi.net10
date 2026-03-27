@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="WebApi.net10.Swagger.Authentication/WebApi.net10.Swagger.Authentication.csproj" />
-  <Project Path="WebApi.net10.Versioning/WebApi.net10.Versioning.csproj" Id="ab50f309-2a90-48b4-a411-daec296c7353" />
+  <Project Path="mitoSoft.WebApi.net10.Swagger.Authentication.ApiKey/mitoSoft.WebApi.net10.Swagger.Authentication.ApiKey.csproj" />
+  <Project Path="mitoSoft.WebApi.net10.Versioning/mitoSoft.WebApi.net10.Versioning.csproj" />
   <Project Path="WebApi/WebApi.csproj" />
   <StartupProjects>
     <Project Path="WebApi/WebApi.csproj" />
