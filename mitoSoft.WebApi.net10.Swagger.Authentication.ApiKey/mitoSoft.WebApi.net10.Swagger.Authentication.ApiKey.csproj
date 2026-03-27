@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>mitoSoft</Authors>
     <Company>mitoSoft</Company>
     <Description>Swagger API Key Authentication middleware for ASP.NET Core Web APIs targeting .NET 10</Description>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\mitoSoft.png" Pack="true" PackagePath="\" />
+    <None Include="mitoSoft.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
