@@ -46,8 +46,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
-        options.SwaggerEndpoint("/swagger/v2/swagger.json", "API V2");
+        // Verwende relative Pfade ohne führenden Slash
+        options.SwaggerEndpoint("../swagger/v1/swagger.json", "API V1");
+        options.SwaggerEndpoint("../swagger/v2/swagger.json", "API V2");
     });
 }
 
