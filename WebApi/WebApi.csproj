@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApi.net10.Swagger.Authentication\WebApi.net10.Swagger.Authentication.csproj" />
-    <ProjectReference Include="..\WebApi.net10.Versioning\WebApi.net10.Versioning.csproj" />
+    <ProjectReference Include="..\mitoSoft.WebApi.net10.Swagger.Authentication.ApiKey\mitoSoft.WebApi.net10.Swagger.Authentication.ApiKey.csproj" />
+    <ProjectReference Include="..\mitoSoft.WebApi.net10.Versioning\mitoSoft.WebApi.net10.Versioning.csproj" />
   </ItemGroup>
 
 </Project>
