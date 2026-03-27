@@ -4,6 +4,15 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <Authors>Michael Roth</Authors>
+    <Company>mitoSoft</Company>
+    <Description>Swagger API Key Authentication middleware for ASP.NET Core Web APIs targeting .NET 10</Description>
+    <PackageProjectUrl>https://github.com/michaelroth1/mitoSoft.WebApi.net10</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/michaelroth1/mitoSoft.WebApi.net10</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>swagger;apikey;authentication;webapi;net10</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
