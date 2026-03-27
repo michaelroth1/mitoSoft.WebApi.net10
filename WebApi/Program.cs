@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.Services.AddOpenApi();
+
 // API Versioning
 builder.Services.AddNet10ApiVersioning();
 
@@ -18,14 +20,14 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new()
     {
-        Title = "WebApi2 - API",
+        Title = "WebApi - API",
         Version = "v1",
         Description = "Eine ASP.NET Core Web API für .NET 10 - Version 1"
     });
 
     options.SwaggerDoc("v2", new()
     {
-        Title = "WebApi2 - API",
+        Title = "WebApi - API",
         Version = "v2",
         Description = "Eine ASP.NET Core Web API für .NET 10 - Version 2 (mit erweiterten Features)"
     });
