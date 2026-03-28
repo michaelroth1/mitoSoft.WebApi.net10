@@ -174,34 +174,29 @@ This template can be extended with:
 Use this prompt to set up the entire WebAPI project automatically:
 
 ```
-Create a .NET 10 ASP.NET Core WebAPI project with the following specifications:
+Configure a .NET ASP.NET Core WebAPI project with Swagger UI:
+(Code conventions: English comments, C# 14.0 features)
 
-1. Install required NuGet packages:
-   - Microsoft.AspNetCore.OpenApi (latest stable version)
-   - Swashbuckle.AspNetCore (latest stable version)
+1. Install Swashbuckle.AspNetCore NuGet package
 
-2. Configure Program.cs:
-   - Add Controllers, OpenApi, EndpointsApiExplorer
-   - Configure SwaggerGen with English title "WebApi - API", version "v1", description "An ASP.NET Core Web API for .NET 10"
-   - Enable Swagger and SwaggerUI in ALL environments (no Development check)
-   - Use relative path for SwaggerEndpoint: "../swagger/v1/swagger.json" with display name "API V1"
-   - Configure pipeline: UseSwagger, UseSwaggerUI, UseHttpsRedirection, UseAuthorization, MapControllers
+2. Configure in Program.cs:
+   - AddSwaggerGen with SwaggerDoc "v1" (Title: "WebApi - API", Version: "v1", Description: "An ASP.NET Core Web API for .NET 10")
+   - IMPORTANT: Use target-typed new() for OpenApiInfo instead of explicit type
+   - UseSwagger and UseSwaggerUI in ALL environments (no Development check)
+   - SwaggerUI Endpoint: "../swagger/v1/swagger.json" with name "API V1"
+   - Ensure: AddControllers, AddOpenApi, AddEndpointsApiExplorer, UseHttpsRedirection, UseAuthorization, MapControllers
 
-3. Remove the default WeatherForecast controller and model
+3. Remove WeatherForecast controller and model
 
-4. Create an example controller with:
-   - Namespace: WebApi.Controllers
-   - Name: ExampleController
-   - Route: [Route("api/[controller]")]
-   - Two methods: Get() and GetById(int id)
+4. Create ExampleController (Route: "api/[controller]") with:
+   - Get() and GetById(int id) methods
    - XML documentation comments
    - ProducesResponseType attributes
+   - IActionResult return type
    - ILogger injection
 
-5. Code conventions:
-   - English comments only
-   - English API documentation
-   - Use C# 14.0 features where applicable
+5. LaunchSettings: launchBrowser: true, launchUrl: "swagger"
+
 ```
 
 ---
